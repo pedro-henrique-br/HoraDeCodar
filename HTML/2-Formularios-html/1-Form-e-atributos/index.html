@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+
+  <h2>Formularios</h2>
+  <form>
+    <label>Password</label>
+    <input type="password">
+  </form>
+
+  <!-- atributo name -->
+  <h2>User</h2>
+  <form>
+    <input type="text" name="=nomeDoUsuario">
+  </form>
+
+  <!-- atributo label -->
+  <h2>User Age</h2>
+  <form>
+    <label for="userAge">Insira sua idade</label>
+    <input type="number" name="=nomeDoUsuario">
+  </form>
+
+  <!-- Envio de form -->
+  <input type="submit" value="enviar">
+
+  <!-- Select -->
+  <form>
+    <label for="carro">Selecione seu Carro</label>
+    <select name="carro">
+      <option value="carro">Supra</option>
+      <option value="carro">Civic</option>
+      <option value="carro">Up Tsi</option>
+    </select>
+  </form>
+
+  <!-- Selected -->
+  <form>
+    <label for="carro">Selecione seu Carro</label>
+    <select name="carro">
+      <option value="carro">Supra</option>
+      <option value="carro" selected>Civic</option>
+      <option value="carro">Up Tsi</option>
+    </select>
+  </form>
+
+  <!-- Selected -->
+  <form>
+    <label for="jogos">Selecione seu Jogo</label>
+    <select name="jogos" multiple>
+      <option value="jogos">Dark souls</option>
+      <option value="jogos" selected>God Of War Ragnarok</option>
+      <option value="jogos">BloodBorne</option>
+    </select>
+  </form>
+
+  <!-- Text Area -->
+  <form>
+    <label for="favGame">Digite seu Jogos favoritos</label>
+    <textarea name="comment"></textarea>      
+  </form>
+
+  <!-- dataList -->
+
+  <form>
+    <label for="sabores">Escolha o sabor do seu pastel</label>
+    <input type="text" list="sabores" name="sabores">
+
+    <datalist id="sabores">
+      <option value="carne">carne</option>
+      <option value="pizza">pizza</option>
+      <option value="queijo">queijo</option>
+    </datalist>
+    <!-- Reset -->
+    <input type="reset" value="reset">
+  </form>
+
+  <!-- input radio -->
+  <div class="carModel">
+    <label for="carModel">Escolha o modelo do carro</label>
+    <input type="radio" value="honda" name="carModel">
+    <label for="honda">Honda</label>
+    <input type="radio" value="ferrari" name="carModel">
+    <label for="ferrari">ferrari</label>    
+    <input type="radio" value="pegeout" name="carModel">
+    <label for="pegeout">pegeout</label>    
+  </div>
+  <div class="carOptions">
+    <label for="carOptions">Escolha o modelo do carro</label>
+    <input type="checkbox" value="honda" name="carOptions">
+    <label for="honda">Honda</label>
+    <input type="checkbox" value="ferrari" name="carOptions">
+    <label for="ferrari">ferrari</label>    
+    <input type="checkbox" value="pegeout" name="carOptions">
+    <label for="pegeout">pegeout</label>    
+  </div>
+  <form>
+    <label value="date">insira sua data de nascimento :</label>
+    <input type="date" value="date" name="date">
+  </form>
+</body>
+</html>
