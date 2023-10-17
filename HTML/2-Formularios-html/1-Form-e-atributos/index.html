@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formularios</title>
 </head>
-<body>
+<form>
 
   <h2>Formularios</h2>
   <form>
@@ -102,6 +102,22 @@
   <form>
     <label value="date">insira sua data de nascimento :</label>
     <input type="date" value="date" name="date">
+
+    <!-- Atributo value -->
+
+    <label for="name">Insira seu nome</label>
+    <input type="text" name="name" value="insira seu nome">
   </form>
+
+  <!-- PlaceHolder -->
+  <label for="name">Insira seu nome abaixo:</label>
+  <input type="text" placeholder="insira seu nome aqui">
+
+  <!-- Required -->
+  <form>
+  <label for="birthDate">Ano de anivesario</label>
+  <input type="date" name="date" value="date" required>
+  <input type="submit" value="enviar">
+  </form>   
 </body>
 </html>
