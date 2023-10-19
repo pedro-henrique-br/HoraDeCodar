@@ -1,0 +1,130 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Header */
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  background: rgb(58, 64, 74);  
+}
+
+
+.logo {
+  padding: 20px;
+}
+
+.logo img{
+  width: 80px;
+  height: 70px;
+}
+
+.nav-bar {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+#login a{
+  padding: 8px;
+  background: rgb(56, 151, 56) ;
+  border-radius: 10px;
+}
+
+/* Main */
+
+.main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: url(/Projects/3-hDc-Host/assets/night-city.jpg);
+  background-size: cover;
+  height: 70vh;
+  width: 100vw;
+}
+
+
+.text {
+  text-align: center;
+  flex-wrap: wrap;
+  color: #ffff;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+#text-0 h1{
+  font-size: 4rem;
+}
+
+#text-1 h3 {
+  font-size: 2rem;
+}
+
+/* Container - info */
+
+.container {
+  justify-content: space-around;
+  display: flex;
+  padding: 100px 0px 200px 0px;
+}
+
+.info {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+}
+
+.info h1 {
+  margin: 10px;
+}
+.info p{
+  margin: 10px;
+  width: 600px;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+
+/* Cards */
+
+.text-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cards {
+  justify-content: space-around;
+  display: flex;
+  }

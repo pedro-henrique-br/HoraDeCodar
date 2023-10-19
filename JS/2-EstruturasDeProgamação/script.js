@@ -55,3 +55,38 @@
 // for(numb = 0; numb <= 10; numb++){
 //   console.log(numb)
 // }
+
+/* Break */
+
+// for(let x = 10; x >= 1; x--){
+//   console.log(x)
+  
+//   if (x <= 4){
+//     break
+//   }
+// }
+
+/* Continue */
+
+// for(let x = 0; x <= 20; x++){
+//   if(x % 2 === 0){
+//     console.log(`Numero par ${x}`)
+//     continue
+//   }
+//   console.log(`numero impar ${x}`)
+// }
+
+/* Switch Case*/
+
+const softwareEngineer = false;
+
+switch(softwareEngineer) {
+  case true :
+    console.log("Software Engineer is overrated")
+    break 
+  case false :
+    console.log("Failed")
+    break
+  default :
+  console.log("caiu no default")
+}
