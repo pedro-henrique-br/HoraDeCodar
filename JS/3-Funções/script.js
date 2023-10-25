@@ -2,6 +2,7 @@ const divisao = function (x, y) {
   return x / y
 }
 
+
 console.log(divisao(18, 4))
 
 // Escopo aninhado
@@ -54,3 +55,20 @@ function imprimir () {
 }
 
 imprimir()
+
+
+// Recursão
+
+const untilFive = (x, y) => {
+  if(x < 5){
+    console.log("parei")
+  }
+  else {
+    const e = x - y
+    console.log(e)
+
+    untilFive(e,y)
+  }
+}
+
+untilFive(10, 3)

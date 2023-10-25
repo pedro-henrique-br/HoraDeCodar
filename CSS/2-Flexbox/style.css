@@ -1,0 +1,32 @@
+.container ul {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.container ul li {
+  font-family: sans-serif;
+  font-size: 50px;
+  margin: 10px;
+  list-style: none;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #cacaca;
+  height: 200px;
+}
+
+#gap {
+  border: solid 1px #43f96b;
+  flex-grow: 1;
+  color: #08f700;
+  order: 1;
+}
+
+
+#gap-2 {
+  color: #e443f9;
+  order: 2;
+}
