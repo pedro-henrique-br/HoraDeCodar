@@ -55,7 +55,8 @@ body {
 }
 
 .nav-links li a:hover {
-  text-decoration: underline;
+  animation-name: animacao;
+  animation-duration: 1s;
 }
 
 /* main */
@@ -72,6 +73,11 @@ body {
   height: 320px;
 }
 
+@keyframes animacao {
+  0% {text-decoration: none;}
+  50%  {border-bottom: solid 1px #fff ;}
+  100% {border-bottom:solid 1px #fff ;}
+}
 
 
 
