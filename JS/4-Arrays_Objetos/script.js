@@ -102,13 +102,49 @@ function soma (...values) {
 
 console.log(soma(100, 104, 213, 123))
 
-// for of 
 
-function soma2 (...values) {
+// For of
+
+const subtract = (...numbs) => {
   let total = 0
-  for(num of values)
-  total += num
-return total
+  for(num of numbs)
+  total = total -= num  
+
+  return total
+}
+console.log(subtract(4,3))
+
+
+
+// IndexOf
+
+const frutas = ["maça", "banana", "mamão", "uva", "perâ"]
+
+console.log(frutas.lastIndexOf("banana"))
+console.log("banana".lastIndexOf("n"))
+
+
+
+// Destructuring in objects
+
+const userDetails = {
+  firstName : "João",
+  user : "jn85",
+  age : "34"
 }
 
-console.log(soma2(2,1,1,34,12,5))
+const { firstName, user, age} = userDetails
+
+console.log(firstName +", "+ user, age)
+
+console.log(age)
+
+
+// Destructuring in arrays 
+
+const usersName = ["Pedro Henrique", "Barbosa Souza", "Juninho"]
+
+const [Pedro, Barbosa , Juninho] = usersName
+
+console.log(Pedro)
+console.log(Barbosa)
