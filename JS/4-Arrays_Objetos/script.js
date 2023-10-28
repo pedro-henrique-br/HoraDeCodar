@@ -148,3 +148,20 @@ const [Pedro, Barbosa , Juninho] = usersName
 
 console.log(Pedro)
 console.log(Barbosa)
+
+
+// JSON to object and object to JSON
+
+
+const myJson = 
+'{"name": "Pedro" , "favMovie": "TWD", "age": 31 , "devSkills": ["Js", "PHP", "SASS", "react"]}';
+
+console.log(myJson)
+
+const myObject = JSON.parse(myJson)
+
+console.log(myObject)
+
+const newJson = JSON.stringify(myObject)
+
+console.log(newJson)
