@@ -163,3 +163,20 @@ console.log(myHonda.exibirModelo)
 
 // Extend/Super - Herança
 
+class cachorro {
+  constructor (patas) {
+    this.patas = patas
+  }
+}
+
+class lobo extends cachorro {
+  constructor(patas, nome){
+    super(patas, patas)
+    this.nome = nome
+  }
+}
+
+
+const rex = new lobo ("4" , "rex")
+
+console.log(rex.nome)
