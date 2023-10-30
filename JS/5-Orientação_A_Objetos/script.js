@@ -163,6 +163,25 @@ console.log(myHonda.exibirModelo)
 
 // Extend/Super - Herança
 
+
+
+
+
+
+
+
+
+
+
+
+// Operador istance of
+
+console.log(myHonda instanceof honda)
+console.log(new honda ("Nsx", "137") instanceof moto)
+console.log(supra instanceof honda)
+
+
+
 class cachorro {
   constructor (patas) {
     this.patas = patas
