@@ -161,19 +161,6 @@ const myHonda = new honda ("Nsx", "137cv")
 console.log(myHonda.exibirModelo)
 
 
-// Extend/Super - Herança
-
-
-
-
-
-
-
-
-
-
-
-
 // Operador istance of
 
 console.log(myHonda instanceof honda)
