@@ -32,25 +32,25 @@ if(i => y){
 
 // debugger
 
-// for(u = 0; u <= 10; u++){
-//   console.log(u)
-// }
+for(u = 0; u <= 10; u++){
+  console.log(u)
+}
 
 // Exceptions
 
-// let i = 10 
+let i = 10 
 
-// if(i != 11 ){
-//   throw new Error("x nao é maior que 11")
-// }
+if(i != 11 ){
+  throw new Error("x nao é maior que 11")
+}
 
 // Try e Catch
 
-// try {
-//   const e = p + o
-// } catch(error){
-//   console.log(error)
-// }
+try {
+  const e = p + o
+} catch(error){
+  console.log(error)
+}
 
 // Finally
 
