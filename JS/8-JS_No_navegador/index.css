@@ -1,0 +1,25 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li a {
+  padding: 20px;
+  color: aliceblue;
+  text-decoration: none;
+  border: solid 2px rgb(29, 29, 29);
+  background: rgb(94, 94, 94);
+}
+
+ul {
+  justify-content: center;
+  display: flex;
+}
+
+ul li {
+  margin-left: 10px;
+  align-items: center;
+  display: flex;
+}
