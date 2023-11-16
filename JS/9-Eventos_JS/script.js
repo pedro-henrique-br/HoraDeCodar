@@ -7,6 +7,7 @@ function click () {
 }
 
 
+
 btn.addEventListener("click", click) 
 
 const btn2 = document.getElementById("btn2")
