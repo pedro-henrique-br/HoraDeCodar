@@ -5,6 +5,14 @@ const divisao = function (x, y) {
 
 console.log(divisao(18, 4))
 
+
+function multiplication (x,y) {
+  return x * y
+}
+
+console.log(multiplication(2, 5))
+
+
 // Escopo aninhado
 
 let x = 4
@@ -30,11 +38,22 @@ const arrFnct = (name) => {
 
 arrFnct("pedro")
 
+const numberOfBooks = (total) => {
+  console.log(total)
+}
+
+numberOfBooks("23 books")
+
+
 // Arrow Funtion Sem return
 
 const raizQuadrada = (x) => x * x
 
 console.log(raizQuadrada(8))
+
+const division = (y, x) => y / x
+
+console.log(division(25,5))
 
 // valor default
 
