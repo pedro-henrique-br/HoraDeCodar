@@ -8,6 +8,9 @@
 
 // let numbers = [3, 2, 4]
 
+let arr = [1,2,3]
+
+console.log(arr[1])
 
 // // métodos
 
@@ -16,17 +19,35 @@
 
 // object literals 
 
-// const pacients = {
-//   name : "adrian",
-//   age : "12",
-//   user : "adrian12"
-// }
+const pacients = {
+  name : "adrian",
+  age : "12",
+  user : "adrian12"
+}
 
-// console.log(pacients)
+// adicionando uma nova propriedade
 
-// console.log(Object.keys(pacients))
+pacients.job = "software engineer"
 
-// push e pop
+console.log(pacients.job)
+
+console.log(pacients)
+
+console.log(Object.keys(pacients))
+
+// Método assign
+
+const pacients2 = {
+  name : ""
+}
+
+Object.assign(pacients2, pacients)
+
+console.log(pacients2)
+console.log(pacients2.name)
+
+// push e pop (array)
+
 
 let popPush = ["pedro", "matheus" , "joao"]
 
