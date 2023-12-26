@@ -26,6 +26,14 @@
 
 // console.log(Object.keys(pacients))
 
+// Loop em array
+
+const users = ["Lucas", "André", "Pedro"]
+
+for (let i = 0; i < users.length; i++){
+  console.log(`Listando usuário: ${users[i]}`)
+}
+
 // push e pop
 
 let popPush = ["pedro", "matheus" , "joao"]
@@ -40,11 +48,24 @@ console.log(removed)
 popPush.push("joao")
 console.log(popPush)
 
-popPush.shift()
 
-console.log(popPush)
+// Shift e unShift
 
-popPush.unshift()
+let kitchen = ["Knife", "Beer", "Microwave"]
+
+console.log(kitchen.shift())
+
+const unShift = kitchen.unshift("Bread")
+
+console.log(kitchen)
+
+// IndexOf e LastIndexOf
+
+const fruits = ["Morango", "Abacate", "Maça", "Cereja"]
+
+console.log(fruits.indexOf("Cereja"))
+console.log(fruits.lastIndexOf("Maça"))
+
 
 // Trim
 
