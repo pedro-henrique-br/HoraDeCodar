@@ -40,9 +40,9 @@ for(u = 0; u <= 10; u++){
 
 let i = 10 
 
-if(i != 11 ){
-  throw new Error("x nao é maior que 11")
-}
+// if(i != 11 ){
+//   throw new Error("x nao é maior que 11")
+// }
 
 // Try e Catch
 
@@ -66,5 +66,14 @@ try {
   console.log("codigo executado")
 }
 
-// 
 
+// Assertions
+
+function checkArray(arr){
+  if(arr.length === 0){
+  throw new Error("O array precisa ter elementos")
+} else {
+  console.log(`o array tem ${arr.length} elementos`)
+}} 
+
+checkArray(["Pedro", "Judas","PHP"])

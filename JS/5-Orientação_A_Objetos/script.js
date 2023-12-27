@@ -52,6 +52,7 @@ console.log(carr.car)
 console.log(objs.car)
 
 console.log(Object.getPrototypeOf(objs === carr))
+console.log(Object.getPrototypeOf(objs))
 
 // Basics classes
 
@@ -65,11 +66,25 @@ function criarMusica (estilo, tamanho) {
 
 console.log(criarMusica("rock", "2:34"))
 
+function criarUsuario (email, senha){
+  const usuario = Object.create({})
+  this.email = email
+  this.senha = senha
+
+  return email + " / " + senha
+}
+
+
 // Constructor functions
+
+const userPedro = new criarUsuario("pedro011@gmail.com", "10082005@")
+
+console.log(userPedro)
 
 const copiarMusica = new criarMusica("Pagode", "sertanejo")
 
 console.log(copiarMusica)
+
 
 // Funtion classes with methods
 
@@ -80,6 +95,8 @@ criarMusica.prototype.views = function () {
 console.log(criarMusica.prototype)
 
 copiarMusica.views()
+
+console.log(copiarMusica)
 
 // Classes es6
 
@@ -136,7 +153,10 @@ const rodas = Symbol()
 
 moto.prototype[rodas] = "BBS 17"
 
+
 const kawazaki = new moto("kawazaki", "1000cc")
+
+console.log(kawazaki)
 
 console.log(kawazaki[rodas])
 
@@ -150,15 +170,23 @@ class honda {
     this.cor = cor
   }
 
-
   get exibirModelo () {
   return `O modelo do honda é ${this.modelo}`
+  }
+
+  set adicionarModelo (modelo) {
+    const carrosArray = modelo.split(", ")
+    this.modelo = carrosArray
   }
 }
 
 const myHonda = new honda ("Nsx", "137cv")
 
 console.log(myHonda.exibirModelo)
+
+honda.adicionarModelo = ["Civic", "Civic type R"]
+
+console.log(honda)
 
 
 // Operador istance of
@@ -168,6 +196,7 @@ console.log(new honda ("Nsx", "137") instanceof moto)
 console.log(supra instanceof honda)
 
 
+// Herança 
 
 class cachorro {
   constructor (patas) {
@@ -186,3 +215,6 @@ class lobo extends cachorro {
 const rex = new lobo ("4" , "rex")
 
 console.log(rex.nome)
+
+console.log(lobo)
+console.log(cachorro)

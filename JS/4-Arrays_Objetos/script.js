@@ -17,6 +17,7 @@ console.log(arr[1])
 // console.log(arr.sort())
 // console.log(numbers.sort())
 
+
 // object literals 
 
 const pacients = {
@@ -24,6 +25,7 @@ const pacients = {
   age : "12",
   user : "adrian12"
 }
+
 
 // adicionando uma nova propriedade
 
@@ -34,6 +36,7 @@ console.log(pacients.job)
 console.log(pacients)
 
 console.log(Object.keys(pacients))
+
 
 // Método assign
 
@@ -46,8 +49,17 @@ Object.assign(pacients2, pacients)
 console.log(pacients2)
 console.log(pacients2.name)
 
-// push e pop (array)
 
+// Loop em array
+
+const users = ["Lucas", "André", "Pedro"]
+
+for (let i = 0; i < users.length; i++){
+  console.log(`Listando usuário: ${users[i]}`)
+}
+
+
+// push e pop
 
 let popPush = ["pedro", "matheus" , "joao"]
 
@@ -61,11 +73,24 @@ console.log(removed)
 popPush.push("joao")
 console.log(popPush)
 
-popPush.shift()
 
-console.log(popPush)
+// Shift e unShift
 
-popPush.unshift()
+let kitchen = ["Knife", "Beer", "Microwave"]
+
+console.log(kitchen.shift())
+
+const unShift = kitchen.unshift("Bread")
+
+console.log(kitchen)
+
+// IndexOf e LastIndexOf
+
+const fruits = ["Morango", "Abacate", "Maça", "Cereja"]
+
+console.log(fruits.indexOf("Cereja"))
+console.log(fruits.lastIndexOf("Maça"))
+
 
 
 
@@ -188,14 +213,12 @@ const subtract = (...numbs) => {
 console.log(subtract(4,3))
 
 
-
 // IndexOf
 
 const frutas = ["maça", "banana", "mamão", "uva", "perâ"]
 
 console.log(frutas.lastIndexOf("banana"))
 console.log("banana".lastIndexOf("n"))
-
 
 
 // Destructuring in objects
@@ -208,6 +231,8 @@ const userDetails = {
 
 const { firstName, user, age} = userDetails
 
+console.log(firstName)
+console.log(userDetails)
 console.log(firstName +", "+ user, age)
 
 console.log(age)
@@ -224,7 +249,6 @@ console.log(Barbosa)
 
 
 // JSON to object and object to JSON
-
 
 const myJson = 
 '{"name": "Pedro" , "favMovie": "TWD", "age": 31 , "devSkills": ["Js", "PHP", "SASS", "react"]}';
