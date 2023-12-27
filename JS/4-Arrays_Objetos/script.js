@@ -67,14 +67,64 @@ console.log(popPush)
 
 popPush.unshift()
 
-// Trim
+
+
+// Slice
+
+const testSlice = ["a", "b", "c", "d"]
+
+const subArray = testSlice.slice(0,3)
+
+console.log(subArray)
+
+
+// Foreach
+
+const cars = ["supra", "ford ka", "bmw 320i", "supra mk4"]
+
+cars.forEach(car => {
+  console.log(`O modelo do carro é o ${car}`)
+});
+
+const users = [
+  {name : "João", cargo : "senior"},
+  {name: "Pedro", cargo : "Estagiario"},
+  {name: "Cleber", cargo : "Supervisor"},
+]
+
+users.forEach( users => {
+  console.log(`O nome do usuario é ${users.name} e o cargo do usuario é ${users.cargo}`)
+})
+
+
+// Includes
+
+const brands = ["Mc Donalds", "Burguer King", "Starbucks"]
+
+console.log(brands.includes("Starbucks"))
+
+if(brands.includes("Mc Donalds")){
+  console.log(`A empresa é a ${brands[0]}`)
+}
+
+
+// Reverse 
+
+const reversetest = ["1","2","3"]
+
+console.log(reversetest.reverse())
+
+// Trim (método de string)
 
 const trimTest = "teste\n"
+
+console.log(trimTest)
 
 console.log(trimTest.length)
 
 console.log(trimTest.trim().length)
 
+console.log(trimTest)
 
 // Padstart
 
@@ -93,6 +143,7 @@ const arrayWordPad = wordPad.split(" ")
 
 console.log(arrayWordPad)
 
+
 // Join
 
 console.log(arrayWordPad.join(" "))
@@ -103,6 +154,7 @@ const itensToBuy = itens.join(", ")
 
 console.log(itensToBuy)
 
+ 
 // repeat
 
 const wordRepeat = wordPad.repeat(3)

@@ -1,8 +1,16 @@
-// func setTimeOut
+// function - setTimeOut
 
 setTimeout(function (){
   console.log("oi")
 },3000)
+
+function enviarMensagem (mensagem){
+  setTimeout( () => { 
+    console.log(mensagem)
+},300)
+}
+
+enviarMensagem("Olá usuario, poderia informar o seu login e sua senha?")
 
 
 // SetInterval
@@ -10,7 +18,7 @@ setTimeout(function (){
 console.log("setInterval doesnt start")
 
 setInterval(function(){
-  console.log("setInterval")
+  console.log("setInterval esta rodando")
 },3000)
 
 console.log("SetInterval are")
@@ -29,6 +37,7 @@ promessa.then(value =>{
 
 .then((value) => value + 5)
 .then((value) => console.log(`agora é ${value}`))
+
 
 
 // Falha na promise
