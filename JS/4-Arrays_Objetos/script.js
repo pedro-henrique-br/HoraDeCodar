@@ -17,6 +17,7 @@ console.log(arr[1])
 // console.log(arr.sort())
 // console.log(numbers.sort())
 
+
 // object literals 
 
 const pacients = {
@@ -24,6 +25,7 @@ const pacients = {
   age : "12",
   user : "adrian12"
 }
+
 
 // adicionando uma nova propriedade
 
@@ -34,6 +36,7 @@ console.log(pacients.job)
 console.log(pacients)
 
 console.log(Object.keys(pacients))
+
 
 // Método assign
 
@@ -158,14 +161,12 @@ const subtract = (...numbs) => {
 console.log(subtract(4,3))
 
 
-
 // IndexOf
 
 const frutas = ["maça", "banana", "mamão", "uva", "perâ"]
 
 console.log(frutas.lastIndexOf("banana"))
 console.log("banana".lastIndexOf("n"))
-
 
 
 // Destructuring in objects
@@ -196,7 +197,6 @@ console.log(Barbosa)
 
 
 // JSON to object and object to JSON
-
 
 const myJson = 
 '{"name": "Pedro" , "favMovie": "TWD", "age": 31 , "devSkills": ["Js", "PHP", "SASS", "react"]}';
