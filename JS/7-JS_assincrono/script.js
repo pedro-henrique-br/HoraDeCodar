@@ -39,7 +39,6 @@ promessa.then(value =>{
 .then((value) => console.log(`agora é ${value}`))
 
 
-
 // Falha na promise
 
 Promise.resolve(4 * "a")
@@ -51,8 +50,7 @@ Promise.resolve(4 * "a")
   .catch((error) => console.log(`A error is executed ${error}`))
 
 
-
-// Rejectin Promises
+// Reject Promises
 
 function checkString(string){
   return new Promise((resolve, reject) => {
@@ -67,13 +65,11 @@ function checkString(string){
 const i = checkString(2)
 const e = checkString(20)
 
-
 i.then((result) => console.log(`o resultado é ${result}`)).catch ((error) =>
   console.log(`${error}`))
 
 e.then((result) => console.log(`o resultado é ${result}`)).catch ((error) =>
   console.log(`${error}`))
-
 
 
 // async functions
@@ -88,6 +84,24 @@ escreverComDelay("oi").then((value) => {
 
 console.log("teste")
 
+
+// Assertions
+
+function functionComDelay () {
+  return new Promise (resolve => {
+    setTimeout(() => {
+      resolve("Resolveu a Promise")
+    }, 3000)
+  })
+}
+
+async function chamadaAsync () {
+  console.log("Chamando a promise, e esperando o resultado")
+  const result = await functionComDelay()
+  console.log(`O resultado chegou: ${result}`)
+}
+
+chamadaAsync()
 
 // Await
 
@@ -106,3 +120,18 @@ async function chamadaDaAsync () {
 }
 
 chamadaDaAsync()
+
+
+// Genarators
+
+function* genarator (){
+  yield 1
+  yield 2
+  yield 3
+}
+
+const gen = genarator()
+
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
