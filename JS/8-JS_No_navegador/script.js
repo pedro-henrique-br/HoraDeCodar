@@ -1,73 +1,87 @@
-console.log(document.body)
+// console.log(document.body)
 
-console.log(document.body.childNodes)
-console.log(document.body.childNodes[1].textContent)
-
-
-
-const btn = document.getElementsByTagName('a')
-
-console.log(btn)
+// console.log(document.body.childNodes)
+// console.log(document.body.childNodes[1].textContent)
 
 
-const nav = document.getElementById('nav')
 
-console.log(nav)
+// const btn = document.getElementsByTagName('a')
 
-
-const img = document.getElementsByClassName('img')
-
-console.log(img)
-
-const button = document.querySelectorAll("nav ul")
-
-console.log(button)
+// console.log(btn)
 
 
-const h1 = document.createElement("h1")
+// const nav = document.getElementById('nav')
 
-console.log(h1)
-
-
-const li = document.createElement("li")
+// console.log(nav)
 
 
-nav.appendChild(li)
+// const img = document.getElementsByClassName('img')
 
-const myText = document.createElement("h1")
+// console.log(img)
 
-const myTextContent = document.createTextNode("Support")
+// const button = document.querySelectorAll("nav ul")
 
-myText.appendChild(myTextContent)
-
-console.log(myText)
-
-document.body.appendChild(myText)
+// console.log(button)
 
 
-// atributos
+// const h1 = document.createElement("h1")
 
-const firstLink = nav.querySelector("a")
-
-console.log(firstLink.textContent)
-
-firstLink.setAttribute("href", "https://www.youtube.com.br")
-
-firstLink.setAttribute("target", "blank")
+// console.log(h1)
 
 
-// ALTURA E LARGURA
+// const li = document.createElement("li")
 
-console.log(nav.offsetHeight)
-console.log(nav.offsetWidth)
 
-// Css com Js
+// nav.appendChild(li)
 
-nav.style.backgroundColor = "#eaf"
-firstLink.style.color = "#eaf"
+// const myText = document.createElement("h1")
 
-// Alterando o estilos de varios elementos
+// const myTextContent = document.createTextNode("Support")
 
-for(li of nav) {
-  nav.style.backgroundColor = "#ffff"
+// myText.appendChild(myTextContent)
+
+// console.log(myText)
+
+// document.body.appendChild(myText)
+
+
+// // atributos
+
+// const firstLink = nav.querySelector("a")
+
+// console.log(firstLink.textContent)
+
+// firstLink.setAttribute("href", "https://www.youtube.com.br")
+
+// firstLink.setAttribute("target", "blank")
+
+
+// // ALTURA E LARGURA
+
+// console.log(nav.offsetHeight)
+// console.log(nav.offsetWidth)
+
+// // Css com Js
+
+// nav.style.backgroundColor = "#eaf"
+// firstLink.style.color = "#eaf"
+
+// // Alterando o estilos de varios elementos
+
+// for(li of nav) {
+//   nav.style.backgroundColor = "#ffff"
+// }
+
+// Random Color btn
+
+const btn = document.getElementById("button")
+
+btn.addEventListener("click" , () => {
+  console.log("Clicou")
+})
+
+const imprimirNoConsole = function () {
+  console.log("Pressed")
 }
+
+btn.addEventListener("click", imprimirNoConsole)
