@@ -51,3 +51,5 @@ window.addEventListener("scroll", (e) => {
   }
 })
 
+console.log("bugfix")
+
