@@ -1,82 +1,92 @@
-// console.log(document.body)
+console.log(document.body)
 
-// console.log(document.body.childNodes)
-// console.log(document.body.childNodes[1].textContent)
-
-
-
-// const btn = document.getElementsByTagName('a')
-
-// console.log(btn)
+console.log(document.body.childNodes)
+console.log(document.body.childNodes[1].textContent)
 
 
-// const nav = document.getElementById('nav')
 
-// console.log(nav)
+const h2 = document.createElement("h2")
 
+h2.style.color = "#cae"
 
-// const img = document.getElementsByClassName('img')
+console.log(h2)
 
-// console.log(img)
-
-// const button = document.querySelectorAll("nav ul")
-
-// console.log(button)
+h2.textContent = "Click Here"
 
 
-// const h1 = document.createElement("h1")
+const btn = document.getElementsByTagName('a')
 
-// console.log(h1)
-
-
-// const li = document.createElement("li")
+console.log(btn)
 
 
-// nav.appendChild(li)
+const nav = document.getElementById('nav')
 
-// const myText = document.createElement("h1")
-
-// const myTextContent = document.createTextNode("Support")
-
-// myText.appendChild(myTextContent)
-
-// console.log(myText)
-
-// document.body.appendChild(myText)
+console.log(nav)
 
 
-// // atributos
+const img = document.getElementsByClassName('img')
 
-// const firstLink = nav.querySelector("a")
+console.log(img)
 
-// console.log(firstLink.textContent)
+const button = document.querySelectorAll("nav ul")
 
-// firstLink.setAttribute("href", "https://www.youtube.com.br")
-
-// firstLink.setAttribute("target", "blank")
+console.log(button)
 
 
-// // ALTURA E LARGURA
+const h1 = document.createElement("h1")
 
-// console.log(nav.offsetHeight)
-// console.log(nav.offsetWidth)
+console.log(h1)
 
-// // Css com Js
 
-// nav.style.backgroundColor = "#eaf"
-// firstLink.style.color = "#eaf"
+const li = document.createElement("li")
 
-// // Alterando o estilos de varios elementos
+nav.appendChild(li)
 
-// for(li of nav) {
-//   nav.style.backgroundColor = "#ffff"
-// }
+const myText = document.createElement("h1")
 
-// Random Color btn
+const myTextContent = document.createTextNode("Support")
 
-const btn = document.getElementById("button")
+myText.style.color = "#eaee"
 
-btn.addEventListener("click" , () => {
+myText.appendChild(myTextContent)
+
+console.log(myText)
+
+document.body.appendChild(myText)
+
+
+// atributos
+
+const firstLink = nav.querySelector("a")
+
+console.log(firstLink.textContent)
+
+firstLink.setAttribute("href", "https://www.youtube.com.br")
+
+firstLink.setAttribute("target", "blank")
+
+
+// ALTURA E LARGURA
+
+console.log(nav.offsetHeight)
+console.log(nav.offsetWidth)
+
+// Css com Js
+
+nav.style.backgroundColor = "#eaf"
+firstLink.style.color = "#eaf"
+
+// Alterando o estilos de varios elementos
+
+for(li of nav) {
+  nav.style.backgroundColor = "#ffff"
+}
+
+// // Random Color btn
+
+const btn1 = document.getElementById("button")
+
+btn1.addEventListener("click" , () => {
   console.log("Clicou")
 })
 
@@ -84,4 +94,21 @@ const imprimirNoConsole = function () {
   console.log("Pressed")
 }
 
-btn.addEventListener("click", imprimirNoConsole)
+
+const cla = document.getElementById("class")
+
+const criarUmaDiv = () => {
+  return cla.innerHTML = "<div>oi</div>"
+}
+
+btn1.addEventListener("click", criarUmaDiv) 
+
+console.log(btn1)
+
+console.log(btn1.getAttribute("id"))
+
+btn1.setAttribute("id", "btn")
+
+console.log(btn1)
+
+console.log(btn1.offsetWidth)
