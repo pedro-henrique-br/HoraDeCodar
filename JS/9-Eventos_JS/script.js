@@ -51,5 +51,9 @@ window.addEventListener("scroll", (e) => {
   }
 })
 
+<<<<<<< HEAD
 console.log("bugfix")
 
+=======
+console.log("error Fixed")
+>>>>>>> https/github.com/pedro-henrique-br
