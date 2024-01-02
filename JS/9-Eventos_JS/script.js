@@ -7,7 +7,6 @@ function click () {
 }
 
 
-
 btn.addEventListener("click", click) 
 
 const btn2 = document.getElementById("btn2")
@@ -18,17 +17,15 @@ btn2.addEventListener("click", () => {
 })
 
 
-
 // Evento com teclado
 
 document.addEventListener("keyup", (e) => {
   console.log(`soltou a tecla ${e.key}`)
 })
 
-// document.addEventListener("keydown", (e) => {
-//   console.log(`soltou a tecla ${e.key}`)
-// })
-
+document.addEventListener("keydown", (e) => {
+  console.log(`soltou a tecla ${e.key}`)
+})
 
 
 // Evento com clicks do mouse
@@ -46,14 +43,11 @@ document.addEventListener("dblclick", (e) => {
 })
 
 window.addEventListener("scroll", (e) => {
-  if (window.scrollY > 1000) {
+  if (window.scrollY >= 1000) {
     console.log("passou dos 200")
   }
 })
 
-<<<<<<< HEAD
 console.log("bugfix")
 
-=======
 console.log("error Fixed")
->>>>>>> https/github.com/pedro-henrique-br
