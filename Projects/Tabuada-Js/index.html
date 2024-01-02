@@ -13,11 +13,11 @@
   <form id="multiplication-form">
     <div class="form-control">
       <label for="number">Tabuada do:</label>
-      <input type="number" name="number" id="number" placeholder="5">
+      <input type="number" name="number" id="number" placeholder="5" required>
     </div>
     <div class="form-control">
       <label for="multiplicator">Multiplicar até:</label>
-      <input type="multiplicator" name="multiplicator" id="multiplicator" value="10">
+      <input type="multiplicator" name="multiplicator" id="multiplicator" value="10" required>
     </div>
     <input id="submit" type="submit" value="calcular">
   </form>
@@ -25,22 +25,12 @@
   <div id="multiplication-table">
     <h2 id="multiplication-title">Tabuada do:<span></span></h2>
     <div id="multiplication-operations">
-      <p>Informe um número para calcular uma tabuada...</p>
+      <p id="p">Informe um número para calcular uma tabuada...</p>
       <div class="row">
-        <div class="operacion">5 x 1 = </div>
-        <div class="result">5</div>
+        <div class="operacion"></div>
+        <div class="result"></div>
       </div>
-      <div class="row">
-        <div class="operacion">5 x 2 = </div>
-        <div class="result">10</div>
-      </div>
-      <div class="row">
-        <div class="operacion">5 x 3 = </div>
-        <div class="result">15</div>
-      </div>
-    </div>
-  </div>
-  
+     
   
 </body>
 </html>

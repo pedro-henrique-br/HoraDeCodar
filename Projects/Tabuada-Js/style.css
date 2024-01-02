@@ -78,14 +78,12 @@ body {
 
 #multiplication-operations {
   background: rgba(204, 255, 218, 0.47);
-  height: 100px;
   max-width: 300px;
   border-radius: 1rem;
   padding: 30px;
 }
 
 .row {
-  visibility: hidden;
   margin: 5px;
   display: flex;
   align-items: center;
